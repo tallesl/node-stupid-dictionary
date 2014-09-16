@@ -1,0 +1,29 @@
+{
+  "name": "stupid-dictionary",
+  "version": "1.0.0",
+  "description": "a stupid word replacer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tallesl/stupid-dictionary"
+  },
+  "keywords": [
+    "stupid",
+    "dictionary",
+    "word",
+    "replace",
+    "replacer"
+  ],
+  "author": "Talles L <talleslasmar@gmail.com>",
+  "license": "Public Domain",
+  "bugs": {
+    "url": "https://github.com/tallesl/stupid-dictionary/issues"
+  },
+  "bin": {
+    "stupid-dictionary": "./index"
+  },
+  "homepage": "https://github.com/tallesl/stupid-dictionary"
+}
