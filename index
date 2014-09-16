@@ -12,7 +12,6 @@ if (!toReplacePath) {
 }
 
 var dictionaryPath = args.next('--dictionary') || path.join(process.cwd(), './dictionary.json')
-var resultPath = args.next('--result') || path.join(process.cwd(), './replaced.txt')
 
 var dictionary = require(dictionaryPath)
 var content = fs.readFileSync(toReplacePath, 'utf8')
@@ -21,4 +20,4 @@ for (var key in dictionary) {
     content = content.replace(key, dictionary[key], 'g')
 }
 
-fs.writeFileSync(resultPath, content)
+process.stdout.write(content)
