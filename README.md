@@ -8,7 +8,7 @@ The dictionary must be a valid json file.
 
 You must provide a file from which the contents will be read with
 `--to-replace [path]`. There is also `--dictionary` if you don't want to use
-the default `./dictionary.json`.
+the default `./dictionary.json` path.
 
 **Note**: The whole content of the files are loaded into memory. That's why it's
 *stupid*.
