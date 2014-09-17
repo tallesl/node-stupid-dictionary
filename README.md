@@ -1,4 +1,7 @@
-# Stupid Dictionary [![NPM version](https://badge.fury.io/js/stupid-dictionary.png)](http://badge.fury.io/js/stupid-dictionary)
+# Stupid Dictionary
+
+[![NPM version](https://badge.fury.io/js/stupid-dictionary.png)](http://badge.fury.io/js/stupid-dictionary)
+[![Dependency Status](https://david-dm.org/tallesl/stupid-dictionary.png)](https://david-dm.org/tallesl/stupid-dictionary)
 
 This is a *stupid* word replacer. It reads the words to replace from a
 dictionary, replaces the words in the file you want to, and then outputs to
