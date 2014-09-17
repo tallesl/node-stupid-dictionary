@@ -2,16 +2,18 @@
 
 var fs = require('fs')
   , path = require('path')
-  , args = require('./args')
+  , minimist = require('minimist')
 
-var toReplacePath = args.next('--to-replace')
+var argv = minimist(process.argv)
+
+var toReplacePath = argv['to-replace']
 if (!toReplacePath) {
     console.error('You should provide the filepath to the original content to be replaced with the \
 \'--to-replace\' argument.')
     process.exit(1)
 }
 
-var dictionaryPath = args.next('--dictionary') || path.join(process.cwd(), './dictionary.json')
+var dictionaryPath = argv['dictionary'] || path.join(process.cwd(), './dictionary.json')
 
 var dictionary = require(dictionaryPath)
 var content = fs.readFileSync(toReplacePath, 'utf8')
