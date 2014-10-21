@@ -1,15 +1,18 @@
 {
-  "name": "stupid-dictionary",
-  "version": "1.1.0",
+  "author": "Talles L <talleslasmar@gmail.com>",
+  "bin": {
+    "stupid-dictionary": "./index"
+  },
+  "bugs": {
+    "url": "https://github.com/tallesl/stupid-dictionary/issues"
+  },
+  "dependencies": {},
   "description": "a stupid word replacer",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {
+    "case": "^1.0.3",
+    "minimist": "^1.1.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/tallesl/stupid-dictionary"
-  },
+  "homepage": "https://github.com/tallesl/stupid-dictionary",
   "keywords": [
     "stupid",
     "dictionary",
@@ -17,17 +20,15 @@
     "replace",
     "replacer"
   ],
-  "author": "Talles L <talleslasmar@gmail.com>",
   "license": "Public Domain",
-  "bugs": {
-    "url": "https://github.com/tallesl/stupid-dictionary/issues"
+  "main": "index.js",
+  "name": "stupid-dictionary",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tallesl/stupid-dictionary"
   },
-  "bin": {
-    "stupid-dictionary": "./index"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "case": "~1.0.3",
-    "minimist": "~1.1.0"
-  },
-  "homepage": "https://github.com/tallesl/stupid-dictionary"
+  "version": "1.1.0"
 }
