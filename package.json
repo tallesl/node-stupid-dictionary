@@ -4,9 +4,8 @@
   "bugs": {
     "url": "https://github.com/tallesl/stupid-dictionary/issues"
   },
-  "dependencies": {},
   "description": "a stupid word replacer",
-  "devDependencies": {
+  "dependencies": {
     "case": "^1.0.3",
     "minimist": "^1.1.0"
   },
