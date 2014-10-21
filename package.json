@@ -4,10 +4,15 @@
   "bugs": {
     "url": "https://github.com/tallesl/stupid-dictionary/issues"
   },
-  "description": "a stupid word replacer",
   "dependencies": {
     "case": "^1.0.3",
     "minimist": "^1.1.0"
+  },
+  "description": "a stupid word replacer",
+  "devDependencies": {
+    "coveralls": "^2.11.2",
+    "istanbul": "^0.3.2",
+    "mocha": "^1.21.5"
   },
   "homepage": "https://github.com/tallesl/stupid-dictionary",
   "keywords": [
@@ -25,7 +30,7 @@
     "url": "https://github.com/tallesl/stupid-dictionary"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "version": "1.1.0"
 }
