@@ -1,5 +1,7 @@
 # :book: Stupid Dictionary
 
+[![build](https://travis-ci.org/tallesl/stupid-dictionary.png)](https://travis-ci.org/tallesl/stupid-dictionary)
+[![coverage](https://coveralls.io/repos/tallesl/stupid-dictionary/badge.png?branch=master)](https://coveralls.io/r/tallesl/stupid-dictionary?branch=master)
 [![dependencies](https://david-dm.org/tallesl/stupid-dictionary.png)](https://david-dm.org/tallesl/stupid-dictionary)
 [![devDependencies](https://david-dm.org/tallesl/stupid-dictionary/dev-status.png)](https://david-dm.org/tallesl/stupid-dictionary#info=devDependencies)
 [![npm module](https://badge.fury.io/js/stupid-dictionary.png)](http://badge.fury.io/js/stupid-dictionary)
@@ -29,14 +31,18 @@ replaces:
 
 ## Usage
 
-    $ npm install -g stupid-dictionary
-    (...)
-    $ ls
-    dictionary.json nasa.txt
-    $ cat dictionary.json
-    { "google glass": "virtual boy", "space": "spaaace" }
-    $ stupid-dictionary --to-replace nasa.txt
-    NASA is looking into using Virtual Boy to assist astrounauts working in spaaace.
+```
+$ npm install -g stupid-dictionary
+(...)
+$ ls
+dictionary.json nasa.txt
+$ cat dictionary.json
+{ "google glass": "virtual boy", "space": "spaaace" }
+$ cat nasa.txt
+NASA is looking into using Google Glass to assist astrounatus working in space.
+$ stupid-dictionary --to-replace nasa.txt
+NASA is looking into using Virtual Boy to assist astrounauts working in spaaace.
+```
 
 <p align="center">
     <a href="http://xkcd.com/1288/">
