@@ -20,19 +20,32 @@ content = replace(dictionary, content)
 // writing result to stdout
 stdout(content)
 
+function checkExistence (filepath) {
+  if (!fs.existsSync(filepath)) {
+    console.error('Coundn\'t find ' + filepath)
+    process.exit(1)
+  }
+}
+
 function loadDictionary ()  {
-  var filepath = argv['dictionary'] ||
-    path.join(process.cwd(), './dictionary.json')
+  var filepath = argv['dictionary'] || path.join(process.cwd(), './dictionary.json')
+
+  checkExistence(filepath)
+
   return require(filepath.toString())
 }
 
 function loadToReplace () {
   var filepath = argv['to-replace']
+
   if (!filepath) {
-      console.error('You should provide the filepath to the original content \
-to be replaced with the "--to-replace" argument.')
+      console.error(
+        'You should provide the filepath to the original content to be replaced with the "--to-replace" argument.')
       process.exit(1)
   }
+
+  checkExistence(filepath)
+
   return fs.readFileSync(filepath.toString(), 'utf8')
 }
 
@@ -40,8 +53,7 @@ function replace (dictionary, content) {
   for (var key in dictionary) {
     var value = dictionary[key]
     var table = replacements(key, value)
-    for (var _key in table)
-      content = content.replace(_key, table[_key], 'g')
+    for (var _key in table) content = content.replace(_key, table[_key], 'g')
   }
   return content
 }
