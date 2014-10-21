@@ -20,7 +20,7 @@
     "replace",
     "replacer"
   ],
-  "license": "Public Domain",
+  "license": "ISC",
   "main": "index.js",
   "name": "stupid-dictionary",
   "repository": {
