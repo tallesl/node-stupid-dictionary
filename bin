@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+
+var minimist = require('minimist')
+  , files = require('./files')
+  , replacer = require('./replacer')
+
+// getting cli arguments
+var argv = minimist(process.argv)
+
+// loading the dictionary
+var dictionary = files.loadDictionary(argv['dictionary'])
+
+// loading the file with the content to be replaced
+var content = files.loadToReplace(argv['to-replace'])
+
+// doing the actual replacing
+content = replacer.replace(dictionary, content)
+
+// writing result to stdout
+process.stdout.write(content)

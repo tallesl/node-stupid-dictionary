@@ -1,8 +1,6 @@
 {
   "author": "Talles L <talleslasmar@gmail.com>",
-  "bin": {
-    "stupid-dictionary": "./index"
-  },
+  "bin": "./bin",
   "bugs": {
     "url": "https://github.com/tallesl/stupid-dictionary/issues"
   },
