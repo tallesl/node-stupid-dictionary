@@ -25,6 +25,7 @@
   "license": "ISC",
   "main": "index.js",
   "name": "stupid-dictionary",
+  "preferGlobal": "true",
   "repository": {
     "type": "git",
     "url": "https://github.com/tallesl/stupid-dictionary"
