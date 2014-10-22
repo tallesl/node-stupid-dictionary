@@ -2,7 +2,7 @@ var fs = require('fs')
   , path = require('path')
 
 exports.loadDictionary = function (filepath)  {
-  var filepath = filepath || path.join(process.cwd(), './dictionary.json')
+  filepath = filepath || path.join(process.cwd(), './dictionary.json')
 
   checkExistence(filepath)
 
