@@ -1,5 +1,5 @@
 var assert = require('assert')
-  , replacer = require('../replacer')
+  , replace = require('../lib/replace')
 
 it('should replace correctly', function () {
 
@@ -26,7 +26,7 @@ election results on their smartphone.'
 eating contest results on their pokédex.'
 
   // act
-  var actual = replacer.replace(dictionary, toReplace)
+  var actual = replace(dictionary, toReplace)
 
   // assert
   assert.strictEqual(actual, expected)

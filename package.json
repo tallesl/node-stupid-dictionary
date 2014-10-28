@@ -1,6 +1,6 @@
 {
   "author": "Talles L <talleslasmar@gmail.com>",
-  "bin": "./bin",
+  "bin": "./bin/stupid-dictionary",
   "bugs": {
     "url": "https://github.com/tallesl/stupid-dictionary/issues"
   },
@@ -15,6 +15,7 @@
     "mocha": "^2.0.0"
   },
   "directories": {
+    "lib": "./lib",
     "man": "./man"
   },
   "homepage": "https://github.com/tallesl/stupid-dictionary",
