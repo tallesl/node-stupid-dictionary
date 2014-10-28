@@ -8,21 +8,18 @@
 
 [![npm](https://nodei.co/npm/stupid-dictionary.png?mini=true)](https://nodei.co/npm/stupid-dictionary/)
 
-This is a *stupid* word replacer. It reads the words to replace from a
-dictionary, replaces the words in the file you want to, and then outputs to
-stdout the result.
+This is a *stupid* word replacer.
+It reads the words to replace from a dictionary, replaces the words in the file you want to, and then outputs the results to stdout.
 
 The dictionary must be a valid json file.
 
-You must provide a file from which the contents will be read with
-`--to-replace [path]`. There is also `--dictionary` if you don't want to use
-the default `./dictionary.json` path.
+You must provide a file from which the contents will be read with `--to-replace [path]`.
+There is also `--dictionary` if you don't want to use the default `./dictionary.json` path.
 
 ## Casing included
 
-Upper, lower, snake and capital cases are automatically considered. So if you
-have in your dictionary a key `google glass` with the value `virtual boy` it
-replaces:
+Upper, lower, snake and capital cases are automatically considered.
+So if you have in your dictionary a key `google glass` with the value `virtual boy` it replaces:
 
 * *google glass* to *virtual boy*;
 * *GOOGLE GLASS* to *VIRTUAL BOY*;

@@ -1,0 +1,24 @@
+.TH stupid-dictionary 7
+
+.SH NAME
+stupid-dictionary \- a stupid word replacer
+
+.SH SYNOPSIS
+\fBstupid-dictionary\fP [ \fB--to-replace\fP \fIpath\fP ] [ \fB--dictionary\fP ]
+
+.SH DESCRIPTION
+This is a "stupid" word replacer.
+It reads the words to replace from a dictionary, replaces the words in the file you want to, and then outputs the result to stdout.
+
+The dictionary must be a valid json file.
+
+You must provide a file from which the contents will be read with \fB--to-replace\fP.
+There is also \fB--dictionary\fP if you don't want to use the default \fB./dictionary.json\fP path.
+
+More at https://github.com/tallesl/stupid-dictionary.
+
+.SH BUGS
+https://github.com/tallesl/stupid-dictionary/issues
+
+.SH AUTHOR
+Talles L <talleslasmar@gmail.com>
