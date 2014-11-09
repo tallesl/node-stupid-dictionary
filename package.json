@@ -1,6 +1,6 @@
 {
   "author": "Talles L <talleslasmar@gmail.com>",
-  "bin": "./bin/stupid-dictionary",
+  "bin": "./bin/stupid-dictionary.js",
   "bugs": {
     "url": "https://github.com/tallesl/stupid-dictionary/issues"
   },
@@ -15,6 +15,7 @@
     "mocha": "^2.0.0"
   },
   "directories": {
+    "bin": "./bin",
     "lib": "./lib",
     "man": "./man"
   },
@@ -26,8 +27,8 @@
     "replace",
     "replacer"
   ],
-  "license": "ISC",
-  "main": "index.js",
+  "license": "Fair",
+  "main": "./lib/index.js",
   "name": "stupid-dictionary",
   "preferGlobal": "true",
   "repository": {
@@ -39,3 +40,4 @@
   },
   "version": "1.2.1"
 }
+

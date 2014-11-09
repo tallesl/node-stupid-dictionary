@@ -32,3 +32,4 @@ eating contest results on their pokédex.'
   assert.strictEqual(actual, expected)
 
 })
+

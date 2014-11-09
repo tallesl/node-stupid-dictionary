@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 var argv = require('minimist')(process.argv.slice(2))
   , dictionary = argv.dictionary
   , index = require('../lib/index')
@@ -16,3 +17,4 @@ There is also "--dictionary" if you don\'t want to use the default "./dictionary
 if (argv.h || argv.help) console.log(help)
 else if (argv.v || argv.version) console.log(version)
 else index(dictionary, toReplace)
+
