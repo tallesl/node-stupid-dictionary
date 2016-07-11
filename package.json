@@ -1,25 +1,23 @@
 {
   "author": "Talles L <talleslasmar@gmail.com>",
-  "bin": "./bin/stupid-dictionary.js",
+  "bin": "./bin.js",
   "bugs": {
-    "url": "https://github.com/tallesl/stupid-dictionary/issues"
+    "url": "https://github.com/tallesl/node-stupid-dictionary/issues"
   },
   "dependencies": {
-    "case": "^1.0.3",
-    "minimist": "^1.1.0"
+    "case": "^1.4.1",
+    "minimisty": "^1.1.1"
   },
-  "description": "a stupid word replacer",
+  "description": "A stupid word replacer.",
   "devDependencies": {
-    "coveralls": "^2.11.2",
-    "istanbul": "^0.3.2",
-    "mocha": "^2.0.0"
+    "coveralls": "^2.11.9",
+    "istanbul": "^0.4.4",
+    "mocha": "^2.5.3",
+    "standard": "^7.1.2"
   },
   "directories": {
-    "bin": "./bin",
-    "lib": "./lib",
     "man": "./man"
   },
-  "homepage": "https://github.com/tallesl/stupid-dictionary",
   "keywords": [
     "stupid",
     "dictionary",
@@ -28,16 +26,14 @@
     "replacer"
   ],
   "license": "Fair",
-  "main": "./lib/index.js",
   "name": "stupid-dictionary",
   "preferGlobal": "true",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tallesl/stupid-dictionary"
+    "url": "https://github.com/tallesl/node-stupid-dictionary"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "standard && mocha"
   },
-  "version": "1.2.2"
+  "version": "1.2.3"
 }
-

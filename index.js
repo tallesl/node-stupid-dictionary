@@ -1,10 +1,13 @@
-var Case = require('case')
+'use strict'
 
-module.exports = function (dictionary, content) {
-  for (var key in dictionary) {
-    var value = dictionary[key]
-      , table = replacements(key, value)
-    for (var _key in table) content = content.replace(_key, table[_key], 'g')
+const Case = require('case')
+
+module.exports = (dictionary, content) => {
+  for (const key in dictionary) {
+    const table = replacements(key, dictionary[key])
+    for (const _key in table) {
+      content = content.replace(_key, table[_key], 'g')
+    }
   }
   return content
 }
@@ -18,4 +21,3 @@ function replacements (key, value) {
   table[Case.upper(key)] = Case.upper(value)
   return table
 }
-

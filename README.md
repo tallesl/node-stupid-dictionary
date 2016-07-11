@@ -1,30 +1,30 @@
-# :book: Stupid Dictionary
+# stupid-dictionary
 
-[![build](https://travis-ci.org/tallesl/stupid-dictionary.png)](https://travis-ci.org/tallesl/stupid-dictionary)
-[![coverage](https://coveralls.io/repos/tallesl/stupid-dictionary/badge.png?branch=master)](https://coveralls.io/r/tallesl/stupid-dictionary?branch=master)
-[![dependencies](https://david-dm.org/tallesl/stupid-dictionary.png)](https://david-dm.org/tallesl/stupid-dictionary)
-[![devDependencies](https://david-dm.org/tallesl/stupid-dictionary/dev-status.png)](https://david-dm.org/tallesl/stupid-dictionary#info=devDependencies)
-[![npm module](https://badge.fury.io/js/stupid-dictionary.png)](http://badge.fury.io/js/stupid-dictionary)
+[![][build-img]][build]
+[![][coverage-img]][coverage]
+[![][dependencies-img]][dependencies]
+[![][devdependencies-img]][devdependencies]
+[![][npm-img]][npm]
 
-[![npm](https://nodei.co/npm/stupid-dictionary.png?mini=true)](https://nodei.co/npm/stupid-dictionary/)
-
-This is a *stupid* word replacer.
-It reads the words to replace from a dictionary, replaces the words in the file you want to, and then outputs the results to stdout.
+This is a word replacer.
+It reads the words to replace from a dictionary, replaces the words in the file you want to, and then outputs the
+results to stdout.
 
 The dictionary must be a valid json file.
 
 You must provide a file from which the contents will be read with `--to-replace [path]`.
 There is also `--dictionary` if you don't want to use the default `./dictionary.json` path.
 
-## Casing included
-
-Upper, lower, snake and capital cases are automatically considered.
-So if you have in your dictionary a key `google glass` with the value `virtual boy` it replaces:
-
-* *google glass* to *virtual boy*;
-* *GOOGLE GLASS* to *VIRTUAL BOY*;
-* *google_glass* to *virtual_boy*;
-* *Google Glass* to *Virtual Boy*.
+[build]:               https://travis-ci.org/tallesl/node-stupid-dictionary
+[build-img]:           https://travis-ci.org/tallesl/node-stupid-dictionary.svg
+[coverage]:            https://coveralls.io/r/tallesl/node-stupid-dictionary?branch=master
+[coverage-img]:        https://coveralls.io/repos/tallesl/node-stupid-dictionary/badge.svg?branch=master
+[dependencies]:        https://david-dm.org/tallesl/node-stupid-dictionary
+[dependencies-img]:    https://david-dm.org/tallesl/node-stupid-dictionary.svg
+[devdependencies]:     https://david-dm.org/tallesl/node-stupid-dictionary#info=devDependencies
+[devdependencies-img]: https://david-dm.org/tallesl/node-stupid-dictionary/dev-status.svg
+[npm]:                 https://www.npmjs.com/package/stupid-dictionary
+[npm-img]:             https://badge.fury.io/js/stupid-dictionary.svg
 
 ## Usage
 
@@ -46,8 +46,3 @@ NASA is looking into using Virtual Boy to assist astrounauts working in spaaace.
         <img src="http://imgs.xkcd.com/comics/substitutions.png">
     </a>
 </p>
-
-## Why it's *stupid*?
-
-The whole content of the files are loaded into memory. That's why.
-
